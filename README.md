@@ -18,7 +18,6 @@ Trabajo Práctico Integrador Final · Algoritmos y Estructuras de Datos · UTN F
 - Repositorio de GitHub: _completar_
 - Video demo: _completar_
 
----
 
 ## Escenario asignado
 
@@ -58,7 +57,6 @@ Si el usuario carga valores con los que el cohete llega a h antes de t₁, el pr
 - Antes de responder se pueden pedir las fórmulas, pero eso descuenta un 20 % de la ronda.
 - Al final, el reporte de desempeño muestra el puntaje, el error promedio, la mejor ronda y una calificación. Las calificaciones, de mayor a menor rendimiento, son Director/a de Vuelo, Ingeniero/a de Guiado, Analista de Telemetría y Cadete.
 
----
 
 ## Funcionamiento
 
@@ -83,7 +81,6 @@ Al iniciar, el programa carga los valores del enunciado y muestra el menú princ
 | `artemis.c` | Cálculos físicos, simulación, desafío y reportes |
 | `validaciones.h` / `validaciones.c` | Ingreso seguro de números y de respuestas S/N, y mensajes por pantalla |
 | `Makefile` | Compilación automática |
-| `web/index.html` | Página web con el simulador animado (complemento) |
 
 ```mermaid
 flowchart LR
@@ -120,7 +117,6 @@ Además:
 - Se aceptan coma o punto decimal (`12,5` o `12.5`).
 - Se rechazan letras, líneas vacías, `inf`, `nan` y números demasiado grandes.
 
----
 
 ## Requisitos
 
@@ -169,7 +165,6 @@ Al salir (opción **0**), el programa muestra el reporte final de la sesión.
 
 La carpeta `web/` tiene una versión animada del simulador. Se abre con doble clic en `index.html`, sin instalar nada. Sirve como apoyo visual: el entregable es el programa de consola.
 
----
 
 ## Uso de Inteligencia Artificial
 
