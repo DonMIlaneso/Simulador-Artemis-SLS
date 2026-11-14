@@ -15,8 +15,8 @@ Trabajo Práctico Integrador Final · Algoritmos y Estructuras de Datos · UTN F
 
 ## Enlaces
 
-- Repositorio de GitHub: _completar_
-- Video demo: _completar_
+- Repositorio de GitHub: [repo](https://github.com/DonMIlaneso/Simulador-Artemis-SLS.git)
+- Video demo: [video](https://drive.google.com/file/d/1x5IjRKBWWhWAy1icSeXFXUeeyAsWiA34/view?usp=sharing)
 
 
 ## Escenario asignado
