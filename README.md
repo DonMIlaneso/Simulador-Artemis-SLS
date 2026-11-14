@@ -130,21 +130,18 @@ Además:
 **Opción 1: clonar y compilar con Make**
 
 ```bash
-git clone URL-DEL-REPOSITORIO
-cd NOMBRE-DE-LA-CARPETA
-make
-./artemis          # Linux o macOS
-.\artemis.exe      # Windows
+# Version de consola
+cd consola
+mingw32-make
+cd ..
+
+# Version grafica
+cd grafica
+mingw32-make all
+mingw32-make test
 ```
 
 En Windows con MinGW, el comando `make` suele llamarse `mingw32-make`.
-
-**Opción 2: compilar a mano con GCC**
-
-```bash
-gcc -Wall -Wextra -std=c99 main.c artemis.c validaciones.c -o artemis -lm
-./artemis
-```
 
 En Windows se usa `-o artemis.exe` y se ejecuta con `.\artemis.exe`. El `-lm` enlaza la biblioteca matemática, que el programa usa para `sqrt` y `ceil`.
 
@@ -162,8 +159,6 @@ Un recorrido típico:
 6. Para probar otros escenarios, cambiar los valores con la opción **1** o restaurar los del enunciado desde ese mismo submenú.
 
 Al salir (opción **0**), el programa muestra el reporte final de la sesión.
-
-La carpeta `web/` tiene una versión animada del simulador. Se abre con doble clic en `index.html`, sin instalar nada. Sirve como apoyo visual: el entregable es el programa de consola.
 
 
 ## Uso de Inteligencia Artificial
@@ -187,3 +182,7 @@ La carpeta `web/` tiene una versión animada del simulador. Se abre con doble cl
 - Se ejecutó con AddressSanitizer, que no detectó errores de memoria.
 - Se detectó y corrigió un error en la condición del caso especial: decía ≥ cuando el código usa >.
 - Los valores de la página web se compararon con los del programa en C.
+
+**Grafica**
+
+Para el desarrollo de la versión gráfica del Simulador Artemis SLS se utilizaron herramientas de inteligencia artificial, principalmente OpenAI Codex y ChatGPT, como apoyo para implementar la interfaz gráfica en lenguaje C mediante Win32 y GDI, organizar el código en módulos, desarrollar los cálculos físicos y las validaciones, y elaborar las pruebas y la documentación. Se revisaron las fórmulas del MRUV y se compararon los resultados con los valores establecidos en la consigna, utilizando también pruebas automatizadas para verificar el funcionamiento del simulador. Estas herramientas facilitaron el desarrollo del proyecto, manteniendo la responsabilidad del equipo sobre la revisión y comprensión del código.
